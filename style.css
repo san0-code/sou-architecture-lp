@@ -1,0 +1,416 @@
+/* 全体の基本設定 */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* メインビジュアル */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('hero画像.png'); /* 背景に薄い膜を重ねる */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+/* ヘッダー（ロゴとメニュー） */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+}
+
+nav li {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+}
+
+/* キャッチコピー */
+.catchphrase {
+    font-size: 40px;
+    letter-spacing: 0.5em;
+    font-weight: 300;
+}
+
+.philosophy-full {
+margin-top: 160px;
+    /* 画像を画面いっぱいに表示 */
+    width: 100%;
+    height: 80vh; /* 画面の高さの80%分。100vhにすれば画面ぴったりになります */
+    
+    /* 背景画像の設定 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('哲学.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* これを入れると、スクロール時に画像が固定されてカッコいいです */
+
+    /* 中の文字を配置する準備 */
+    display: flex;
+    align-items: center; /* 上下中央 */
+    justify-content: flex-start; /* 左寄せ */
+    color: #ffffff; /* 文字を白に */
+}
+
+.philosophy-content {
+    /* 文字の位置をFigmaのグリッドに合わせて調整 */
+    padding-left: 10%; /* 左側から10%あける */
+    max-width: 600px;  /* 文字が広がりすぎないように制限 */
+}
+
+.philosophy-content h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+}
+
+.philosophy-content p {
+    font-size: 16px;
+    line-height: 2.5; /* Figmaらしい広い行間 */
+    letter-spacing: 0.1em;
+}
+
+
+
+/* SERVICE全体の余白 */
+.service-v2 {
+    padding: 120px 0;
+    background-color: #fff;
+}
+
+/* 親の箱：ここに1枚の画像を敷く */
+.service-single-image-bg {
+    width: 100%;
+    height: 500px; /* 画像の高さをFigmaに合わせる */
+    
+    /* ↓ここをご自身の「1枚の画像」のファイル名に書き換えてください */
+    background-image: url('SERVICE.png'); 
+    
+    background-size: cover;
+    background-position: center;
+    
+    /* 中の3つの文字エリアを横並びにする */
+    display: flex;
+}
+
+/* 子要素：中を3等分するための透明な箱 */
+.service-area {
+    flex: 1; /* 3等分 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* 文字が見えにくい場合は、ここに薄い黒の膜（オーバーレイ）を入れても良いです */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+/* 文字のデザイン（以前と同じ） */
+.service-content {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.service-content h3 { font-size: 18px; font-weight: normal; margin-bottom: 15px; }
+.service-content h3 span { font-size: 12px; display: block; margin-top: 5px; }
+.service-content p { font-size: 13px; line-height: 1.8; margin-bottom: 20px; }
+.view-more { font-size: 11px; letter-spacing: 0.2em; border-bottom: 1px solid #fff; padding-bottom: 5px; }
+
+
+/* NEWS部分 */
+.news-section {
+    margin-bottom: 100px;
+}
+
+.section-label {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #333;
+
+
+/* --- ここを追加 --- */
+    border-bottom: 1px solid #e0e0e0; /* 線の太さ、種類、色（薄いグレー） */
+    padding-bottom: 15px;            /* 文字と線の間の隙間 */
+    display: inline-block;           /* 線を文字の長さに合わせる場合 */
+    width: 100%;                     /* 線を横幅いっぱいに引く場合はこちら */
+    /* ------------------ */
+
+}
+
+/* WORKS部分 */
+.works-section {
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.work-item {
+    margin-bottom: 60px;
+}
+
+/* メインの作品（左寄・大） */
+.main-work {
+    width: 75%; /* 画面の約4分の3を使う */
+}
+
+/* サブの作品（右寄・小） */
+.sub-work {
+    width: 50%; /* 少し小さく */
+    margin-left: auto; /* 右に寄せる */
+    margin-top: 40px; /* メイン画像と少し重なるような「間」を作る */
+}
+
+.work-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.work-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid #eee; /* さりげない区切り線 */
+}
+
+.contact {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.form-group label span {
+    font-size: 10px;
+    color: #999;
+    margin-left: 10px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #f5f5f5; /* Figmaのような薄いグレー */
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.submit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    float: right;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+/* フッター */
+footer {
+    padding: 60px 0;
+    background-color: #0d1518; /* SOUの濃紺/黒 */
+    color: #fff;
+    text-align: center;
+}
+
+.footer-copy {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.designer-credit {
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+/* NEWSの中の文章だけに線を引く */
+.news-section .news-item {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0; /* NEWS専用の線 */
+    padding-bottom: 15px;
+    margin-bottom: 20px; /* 次のニュース（もしあれば）との間隔 */
+    width: 100%;
+}
+
+/* WORKSの情報をリセット（もし線が出てしまっていたら上書き） */
+.work-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    border-bottom: none; /* ここで一度線を消します */
+}
+
+/* --- スマートフォン対応 --- */
+@media (max-width: 768px) {
+    
+    /* 1. 共通のコンテナ余白を調整 */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* 2. 哲学セクション：背景画像の上に文字が乗るレイアウトの調整 */
+    .philosophy-full {
+        height: auto;
+        padding: 100px 0;
+    }
+    
+    .philosophy-content {
+        padding-left: 20px; /* 左端に寄りすぎないように調整 */
+        padding-right: 20px;
+    }
+
+    /* 3. SERVICE：1枚の画像の上に並んだ文字を縦に並べる */
+    .service-single-image-bg {
+        flex-direction: column; /* 横並びから縦並びに変更 */
+        height: auto; /* 画像が潰れないように高さは中身に合わせる */
+        background-size: cover;
+    }
+
+    .service-area {
+        width: 100%;
+        padding: 60px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* 境界線 */
+    }
+
+    /* 4. WORKS：右に寄せていた画像を中央に戻す */
+    .main-work, .sub-work {
+        width: 100%; /* 画面いっぱいにする */
+        margin-left: 0;
+        margin-top: 40px; /* 画像同士の重なりを解消して縦に並べる */
+    }
+    
+    .work-info {
+        font-size: 14px; /* スマホでは少し文字を大きくして読みやすく */
+    }
+
+    /* 5. CONTACT：フォームの幅を調整 */
+    .contact-form {
+        width: 100%;
+    }
+}
+
+/* セクションごとの間隔を思い切って広げる */
+.philosophy-full, .service-v2, .works-news-container {
+    margin-top: 180px; /* 100pxから大幅アップ。これで視線がリセットされます */
+}
+
+
+.service-single-image-bg {
+    /* 画像を少しだけ暗く、彩度を控えめにして高級感を出す */
+    filter: brightness(0.9) contrast(1.05);
+}
+
+.section-label, .work-title, .footer-copy {
+    letter-spacing: 0.3em; /* 0.1emからさらに広げる。これだけで「設計事務所」感が出ます */
+    font-feature-settings: "palt"; /* プロ向けの微調整：文字詰めを最適化 */
+}
+
+
+.work-description {
+    font-size: 11px;         /* 小さめの文字で繊細さを出す */
+    line-height: 2;          /* 行間を広げて空気感を作る */
+    letter-spacing: 0.1em;
+    color: #666;             /* 少しグレーにして主張を抑える */
+    margin-top: 15px;        /* タイトルとの間隔 */
+    text-align: justify;     /* 端を揃えて建築的な端正さを出す */
+}
+
+/* 右下の作品の箱を「基準」にする */
+.sub-work {
+    position: relative; 
+}
+
+/* 説明文を左側の空白（HOUSE IN KYOTOの横）へ配置 */
+.work-description {
+    position: absolute;
+    top: 0;                /* 画像の上のラインに合わせる */
+    right: 110%;           /* 画像の左側（100%＋α）の位置へ飛ばす */
+    width: 240px;          /* 文字の横幅 */
+    
+    font-size: 11px;
+    line-height: 2.5;      /* ゆったりとした行間 */
+    letter-spacing: 0.15em;
+    color: #888;
+    text-align: left;
+}
+
+/* スマホでは横に飛ばすと画面外に消えるので、画像の下に戻す */
+@media (max-width: 768px) {
+    .work-description {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+}
+
+
+body {
+    background-color: #f9f9f9; /* ほんの少しだけトーンを落とした白 */
+}
+
+.work-photo img {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05); /* 非常に淡い影で、品よく浮かせる */
+    transition: transform 0.6s ease;
+}
+
+/* マウスを乗せた時に少しだけ動かすと、さらに「生きてる」感じが出ます */
+.work-photo:hover img {
+    transform: scale(1.02);
+}
