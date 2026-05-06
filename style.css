@@ -8,7 +8,7 @@ body {
 
 /* メインビジュアル */
 .hero {
-    height: 100vh;
+    /* height: 100vh; ←これをコメントアウト */
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('hero画像.png'); /* 背景に薄い膜を重ねる */
     background-size: cover;
     background-position: center;
