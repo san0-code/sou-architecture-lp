@@ -67,7 +67,7 @@ margin-top: 160px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('哲学.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* これを入れると、スクロール時に画像が固定されてカッコいいです */
+    /*background-attachment: fixed;  これを入れると、スクロール時に画像が固定されてカッコいいです */
 
     /* 中の文字を配置する準備 */
     display: flex;
