@@ -2,13 +2,12 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOU建築設計事務所 | 制作実績</title>
-    
 </head>
 <body>
-    <!-- メインビジュアルセクション -->
+
     <section class="hero">
         <header>
             <h1 class="logo">SOU建築設計事務所</h1>
@@ -26,27 +25,24 @@
         </div>
     </section>
 
-<!-- 哲学セクション（背景画像＋上に文字） -->
-<section class="philosophy-full">
-    <div class="philosophy-content">
-        <h2>Philosophy - 哲学</h2>
-        <p>家は、単なる箱ではない。それは、<br>
-           心を整え、自分を取り戻すための装置である。<br>
-           私たちは、光の角度一つ、素材の肌触り一つにこだわり、<br>
-           思考を妨げない「究極の余白」を設計します。</p>
-    </div>
-</section>
+    <section class="philosophy-full">
+        <div class="container">
+            <div class="philosophy-content">
+                <h2 class="section-label" data-num="01 /">PHILOSOPHY <span>哲学</span></h2>
+                <p>家は、単なる箱ではない。それは、<br>
+                   心を整え、自分を取り戻すための装置である。<br>
+                   私たちは、光の角度一つ、素材の肌触り一つにこだわり、<br>
+                   思考を妨げない「究極の余白」を設計します。</p>
+            </div>
+        </div>
+    </section>
 
-
-<!-- サービスセクション（1枚の画像を背景にする） -->
-<section class="service-v2">
-    <div class="container">
-        <h2 class="section-title">SERVICE</h2>
+    <section class="service-v2">
+        <div class="container">
+            <h2 class="section-label" data-num="02 /">SERVICE <span>事業内容</span></h2>
+        </div>
         
-        <!-- ここに1枚の画像を敷きます -->
         <div class="service-single-image-bg">
-            
-            <!-- 住宅エリア（文字だけ） -->
             <div class="service-area">
                 <div class="service-content">
                     <h3>住宅 <span>(Residential)</span></h3>
@@ -55,7 +51,6 @@
                 </div>
             </div>
 
-            <!-- 商業施設エリア（文字だけ） -->
             <div class="service-area">
                 <div class="service-content">
                     <h3>商業・公共施設 <span>(Commercial)</span></h3>
@@ -64,7 +59,6 @@
                 </div>
             </div>
 
-            <!-- リノベーションエリア（文字だけ） -->
             <div class="service-area">
                 <div class="service-content">
                     <h3>リノベーション <span>(Renovation)</span></h3>
@@ -72,81 +66,70 @@
                     <span class="view-more">VIEW MORE</span>
                 </div>
             </div>
+        </div> </section>
 
-        </div> <!-- /.service-single-image-bg -->
-    </div>
-</section>
-
-<!-- NEWS & WORKS セクション -->
-<section class="works-news-container">
-    <div class="container">
-        <!-- NEWS -->
-        <div class="news-section">
-            <h2 class="section-label">NEWS</h2>
-            <p class="news-item">2026.05.03 日本建築設計協会賞を受賞いたしました。</p>
-        </div>
-
-        
-        <!-- WORKS -->
-<div class="works-section">
-    <h2 class="section-label">WORKS</h2>
-    
-    <!-- メインの作品 -->
-    <div class="work-item main-work">
-        <div class="work-photo">
-            <img src="work1.png" alt="HOUSE IN KOHL">
-        </div>
-        <div class="work-info">
-            <span class="work-title">HOUSE IN KOHL</span>
-            <span class="work-year">2023</span>
-        </div>
-    </div>
-
-    <!-- 右下の作品（ここに説明文をセット） -->
-    <div class="work-item sub-work">
-        <div class="work-photo">
-            <img src="work2.png" alt="HOUSE IN KYOTO">
-        </div>
-        <div class="work-info">
-            <span class="work-title">HOUSE IN KYOTO</span>
-            <span class="work-year">2022</span>
-        </div>
-        <!-- こだわりポイント（CSSで左の空白へ飛ばします） -->
-        <p class="work-description">
-            伝統的な京町家の骨組みを活かし、光と影のコントラストを再構成。<br>
-            都市の喧騒から切り離された、静寂が宿る住まい。
-        </p>
-    </div>
-</div>
-
-<!-- CONTACT -->
-<section class="contact">
-    <div class="container">
-        <h2 class="section-label">CONTACT</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <label>お名前 <span>Name</span></label>
-                <input type="text">
+    <section class="works-news-container">
+        <div class="container">
+            <div class="news-section">
+                <h2 class="section-label" data-num="03 /">NEWS <span>新着情報</span></h2>
+                <p class="news-item">2026.05.03 日本建築設計協会賞を受賞いたしました。</p>
             </div>
-            <div class="form-group">
-                <label>メールアドレス <span>Mail</span></label>
-                <input type="email">
-            </div>
-            <div class="form-group">
-                <label>お問い合わせ内容 <span>Message</span></label>
-                <textarea></textarea>
-            </div>
-            <button type="submit" class="submit-btn">SUBMIT →</button>
-        </form>
-    </div>
-</section>
+            
+            <div class="works-section">
+                <h2 class="section-label" data-num="04 /">WORKS <span>制作実績</span></h2>
+                
+                <div class="work-item main-work">
+                    <div class="work-photo">
+                        <img src="work1.png" alt="HOUSE IN KOHL">
+                    </div>
+                    <div class="work-info">
+                        <span class="work-title">HOUSE IN KOHL</span>
+                        <span class="work-year">2023</span>
+                    </div>
+                </div>
 
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <p class="footer-copy">SOU建築設計事務所　2026</p>
-        <p class="designer-credit">Design by DEEPBLUE.</p> <!-- ここにあなたの屋号を！ -->
-    </div>
-</footer>
+                <div class="work-item sub-work">
+                    <div class="work-photo">
+                        <img src="work2.png" alt="HOUSE IN KYOTO">
+                    </div>
+                    <div class="work-info">
+                        <span class="work-title">HOUSE IN KYOTO</span>
+                        <span class="work-year">2022</span>
+                    </div>
+                    <p class="work-description">
+                        伝統的な京町家の骨組みを活かし、光と影のコントラストを再構成。<br>
+                        都市の喧騒から切り離された、静寂が宿る住まい。
+                    </p>
+                </div>
+            </div> </div> </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-label" data-num="05 /">CONTACT <span>お問い合わせ</span></h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>お名前 <span>Name</span></label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>メールアドレス <span>Mail</span></label>
+                    <input type="email">
+                </div>
+                <div class="form-group">
+                    <label>お問い合わせ内容 <span>Message</span></label>
+                    <textarea></textarea>
+                </div>
+                <button type="submit" class="submit-btn">SUBMIT →</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="footer-copy">SOU建築設計事務所 2026</p>
+            <p class="designer-credit">Design by DEEPBLUE.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
